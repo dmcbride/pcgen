@@ -1,0 +1,6 @@
+
+
+ABILITYCATEGORY:War Wizard Fighter Feat	VISIBLE:QUALIFY	CATEGORY:FEAT	DISPLAYLOCATION:Feats	EDITABLE:YES	EDITPOOL:NO			ABILITYLIST:Weapon Focus(Longbow)|Weapon Focus (Shortbow)|Far Shot|Precise Shot|Improved Precise Shot|Mounted Archery|Point Blank Shot|Rapid Shot|Shot on the Run|Manyshot
+ABILITYCATEGORY:War Wizard Wizard Feat	VISIBLE:QUALIFY	CATEGORY:FEAT	DISPLAYLOCATION:Feats	EDITABLE:YES	EDITPOOL:NO			ABILITYLIST:Spell Focus	TYPE:Metamagic
+
+ABILITYCATEGORY:War Wizard of Evermeet Class Feature	VISIBLE:QUALIFY	CATEGORY:Special Ability	DISPLAYLOCATION:Class Features	EDITABLE:YES	EDITPOOL:NO		TYPE:War Wizard of Evermeet Class Feature

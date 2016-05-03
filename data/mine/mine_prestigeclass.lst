@@ -1,0 +1,133 @@
+
+
+#War wizard of Evermeet
+# Class Name				Hit Dice	Type			Abbreviation	Max Level	Save checks bonus															Combat bonus					SOURCELONG
+#
+#War wizards of Evermeet are specially trained wizards to project Evermeet 
+#power back onto the mainland.  Their presence in a single location does no
+#mean Evermeet is at war with that location, nor are the wizards necessarily 
+#diplomats for Evermeet (although they may have to fill in for that role from 
+#time to time).
+#
+#Requirements:
+#Race: Elf
+#Skills: Knowledge (Evermeet) 4, Knowledge (Arcana) 8, Diplomacy 4, Spellcraft 
+#10
+#Feats: Scribe Scroll, Empower Spell
+#Spellcasting: ability to cast 3rd-level arcane spells
+#Special: must be a citizen of Evermeet - this doesn't mean you must live 
+#there, just that the Evermeet government recognises you as a citizen.
+#
+# Class Name				Required AL			Required Feat														Required Skill											Req. Spell Type			Race				Special
+CLASS:War Wizard of Evermeet		HD:4		TYPE:PC.Prestige	FACT:Abb|WWE		MAXLEVEL:10	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/3	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")/2|TYPE=Base.REPLACE	SOURCELONG:Extras	SOURCESHORT:Extras35
+CLASS:War Wizard of Evermeet	DEFINE:WarWizardOfEvermeetLVL|0	BONUS:VAR|WarWizardOfEvermeetLVL|CL	PREALIGN:NG,TN,CG,CN		PREABILITY:2,CATEGORY=Feat,Scribe Scroll,Empower Spell	PRESKILL:2,Knowledge (Evermeet)=4,Diplomacy=4	PRESKILL:1,Knowledge (Arcana)=8	PRESKILL:1,Spellcraft=10			PRESPELLTYPE:1,Arcane=3		PRERACE:1,Elf%,Half-Elf	PRETEXT:Must be a citizen of Evermeet
+CLASS:War Wizard of Evermeet		STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|TYPE=Knowledge|TYPE=Profession|Spellcraft
+###Block: Add Caster Level
+1:REPEATLEVEL:1	ADD:SPELLCASTER|Arcane
+###Block: Spell Known Progression
+1	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=1|3
+2	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=2|3
+3	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=3|3
+4	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=4|3
+5	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=5|3
+6	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=6|3
+7	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=7|3
+8	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=8|3
+9	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=9|3
+10	BONUS:SPELLKNOWN|CLASS=Wizard;LEVEL=10|3
+###Block: Pools:
+3	BONUS:ABILITYPOOL|War Wizard Fighter Feat|1+(WarWizardOfEvermeetLVL>=8)
+5	BONUS:ABILITYPOOL|War Wizard Wizard Feat|1+(WarWizardOfEvermeetLVL>=9)
+###Block: Sabs
+1	ABILITY:War Wizard of Evermeet Class Feature|AUTOMATIC|War Wizard of Evermeet ~ Evermeet Membership
+2	ABILITY:War Wizard of Evermeet Class Feature|AUTOMATIC|War Wizard of Evermeet ~ Access to Evermeet portals|War Wizard of Evermeet ~ Spellpool
+4	ABILITY:War Wizard of Evermeet Class Feature|AUTOMATIC|War Wizard of Evermeet ~ Elven Low Magic
+7	ABILITY:War Wizard of Evermeet Class Feature|AUTOMATIC|War Wizard of Evermeet ~ Improved Empower
+
+
+
+
+
+
+
+
+
+
+
+#
+#BAB: Same as wizard
+#Saves: Fort: poor; Ref: poor; Will: good
+#HD: d4
+#Class skills: (probably same as regular wizard)
+#
+# Class Name				Skill Pts/Lvl	Class Skill
+#1 - Membership, Improved spell acquisition
+#2 - Access to Evermeet portals, Spell pool I
+#3 - Bonus archery feat
+#4 - Elven Low Magic - Automatic Empower Spell
+#5 - Bonus metamagic or spell focus feat
+#6 - Spell pool II
+#7 - Improved Empower
+#8 - Bonus archery feat
+#9 - Bonus metamagic or spell focus feat
+#10 - Spell pool III
+#
+#Membership - you become a full member of the guild. Dues are 25gp per month, 
+#payable up to 1 year in advance; obedience to the rulings of the guild 
+#masters; obedience to the rulings of Evermeet's proper and popular 
+#government.
+#
+#Access to Evermeet portals - As part of your training, you learn the keys and 
+#passphrases to enter Evermeet via portals. To recall the passphrase, a DC15 
+#Guild Wizard of Evermeet level check, with INT bonus is required. To recall 
+#if there is an accessible Evermeet-owned portal within a 50-mile radius of 
+#your current position requires a DC20 survival check.
+#This does not necessarily allow others to go through the portal, too.
+#Non-citizens still need permission to enter Evermeet, especially non-elves.
+#
+#Improved spell acquisition - At each level of advancement in the guild 
+#prestige class, a character gains three spells of her choice of any level she 
+#can cast to add to her spell book.
+#
+#Spell pool - see the spell pool description in Magic of Faerun (p19).
+#You gain access to levels 1-3 at level 2, and add 4-6 at level 6, and 7-9 at
+#level 10.
+#
+#Bonus archery feat - at third and eighth levels, the character may select any 
+#archery feat to complement their already innate abilities as an archer. You 
+#must still meet the prerequisites for gaining the feat. e.g., point blank 
+#shot.
+#
+#Automatic Empower Spell - at fourth level, the character may empower spells 
+#not prepared for extending at time of casting without increasing the level of 
+#the spell slot.  This is usable 3 times per day.
+#
+#Improved Empower Spell - at 7th level, the empower feat, including the 
+#automatic empower, can be used to double the variable aspects of your spell 
+#rather than just 50% extra.
+#
+
+#Harper Harper
+# Class Name				Hit Dice	Type			Abbreviation	Max Level	Save checks bonus															Combat bonus					SOURCELONG
+#CLASS:Harper Harper			HD:6		TYPE:PC.Prestige	ABB:HHarp		MAXLEVEL:5	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2				BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE	SOURCELONG:Extras	SOURCESHORT:Extras35
+#
+# Requirements:
+# Alignment: Non-evil
+# Feats: Artist, Negotiator
+# Skills: Bluff 7, Decipher Script 3, Diplomacy 7, Gather Info 6
+#         Knowledge (local) 7, Perform 10, Sense Motive 4,
+#         and either spellcraft 5 or use magical device 8
+# Spell: Cast 2nd level arcane spells
+# Special: Approval of High Harpers
+# Class Name			Required AL			Required Feat					Required Skill																																						Req. Spell Type			Special
+#CLASS:Harper Harper		PREALIGN:LG,LN,NG,TN,CG,CN	PREFEAT:1,Artist	PREFEAT:1,Negotiator	PRESKILL:3,Knowledge (Local),Diplomacy,Bluff=7	PRESKILL:1,Perform=10	PRESKILL:1,Decipher Script=3	PRESKILL:1,Gather Information=6	PRESKILL:1,Sense Motive=4	PREMULT:1,[PRESKILL:1,Spellcraft=5],[PRESKILL:1,Use Magic Device=8]	PRESPELLTYPE:Arcane,1,2		PRETEXT:Must be invited to the Harpers
+#BAB: Same as Bard
+#Saves: Fort: poor; Ref: good; Will: good
+#HD: d6
+#Class skills: 
+#
+# Class Name		Skill Pts/Lvl	Class Skill
+#CLASS:Harper Harper	STARTSKILLPTS:6	CSKILL:Appraise|Bluff|Concentration|TYPE.Craft|Decipher Script|Diplomacy|Disguise|Gather Information|TYPE.Knowledge|Listen|Perform|TYPE.Profession|Search|Sense Motive|Spot|Use Magic Device
+#1 - Harper Knowledge, Harper Music
+#1	SA:Harper Knowledge (+%)|HarperKnowledge	BONUS:VAR|HarperKnowledge|"CL=Harper Harper"+INT	BONUS:VAR|BardicMusicTimes|"CL=Harper Harper"	DEFINE:HarperKnowledge|0
+#2	
