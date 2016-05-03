@@ -1,0 +1,11 @@
+
+Knowledge (Evermeet)			KEYSTAT:INT	USEUNTRAINED:NO					TYPE:Intelligence.Knowledge																																									
+
+#Perform (Harp)			KEYSTAT:CHA	USEUNTRAINED:NO					TYPE:Charisma.Perform																																									SOURCELONG:Player's Handbook	SOURCESHORT:phb	SOURCEPAGE:p.79
+#Perform (Lyre)			KEYSTAT:CHA	USEUNTRAINED:NO					TYPE:Charisma.Perform																																									SOURCELONG:Player's Handbook	SOURCESHORT:phb	SOURCEPAGE:p.79
+#Perform (Lute)			KEYSTAT:CHA	USEUNTRAINED:NO					TYPE:Charisma.Perform																																									SOURCELONG:Player's Handbook	SOURCESHORT:phb	SOURCEPAGE:p.79
+
+# changes to perform skill...
+#Perform (String Instruments).MOD	BONUS:SKILLRANK|Perform (Harp)|SKILLRANK=Perform {String Instruments}
+#Perform (String Instruments).MOD	BONUS:SKILLRANK|Perform (Lyre)|SKILLRANK=Perform {String Instruments}
+#Perform (String Instruments).MOD	BONUS:SKILLRANK|Perform (Lute)|SKILLRANK=Perform {String Instruments}

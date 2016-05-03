@@ -1,0 +1,8 @@
+
+
+Evermeet Membership			KEY:War Wizard of Evermeet ~ Evermeet Membership		CATEGORY:Special Ability	TYPE:War Wizard of Evermeet Class Feature.SpecialQuality		DESC:WW of Evermeet Membership benefits and duties									
+Access to Evermeet portals		KEY:War Wizard of Evermeet ~ Access to Evermeet portals	CATEGORY:Special Ability	TYPE:War Wizard of Evermeet Class Feature.SpecialQuality		DESC:Access to Evermeet portals (DC15 level check to remember password)
+Spellpool					KEY:War Wizard of Evermeet ~ Spellpool				CATEGORY:Special Ability	TYPE:War Wizard of Evermeet Class Feature.SpecialQuality	ASPECT:NAME|Spellpool I|PREVARLTEQ:WarWizardOfEvermeetLVL,5	ASPECT:NAME|Spellpool II|PREVARGT:WarWizardOfEvermeetLVL,5|PREVARLT:WarWizardOfEvermeetLVL,9	ASPECT:NAME|Spellpool III|PREVAREQ:WarWizardOfEvermeetLVL,10
+Elven Low Magic				KEY:War Wizard of Evermeet ~ Elven Low Magic			CATEGORY:Special Ability	TYPE:War Wizard of Evermeet Class Feature.SpecialQuality		TYPE:Extraordinary		DESC:Apply the effects of the Empower Spell feat to any spell you cast %1/day|ElvenLowCount	BONUS:VAR|ElvenLowCount|1+CHA				DEFINE:ElvenLowCount|0
+Improved Empower				KEY:War Wizard of Evermeet ~ Improved Empower			CATEGORY:Special Ability	TYPE:War Wizard of Evermeet Class Feature.SpecialQuality	DESC:Improved Empower (100%% rather than 50%%)					
+

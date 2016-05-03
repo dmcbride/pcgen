@@ -1,0 +1,17 @@
+# my own feats
+
+Greater Critical
+	CATEGORY:Feat
+	TYPE:General.Fighter
+	PREABILITY:2,CATEGORY=Feat,Power Attack,Weapon Focus
+	PRETOTALAB:10
+	DESC:With your chosen weapon, you know how to hit hard criticals
+	MULT:YES
+	CHOOSE:WEAPONPROFICIENCY|ABILITY=FEAT[Weapon Focus]
+	BONUS:WEAPONPROF=%LIST|CRITMULTADD|1
+	SOURCELONG:None
+	SOURCESHORT:mine
+	SOURCEPAGE:n/a
+	BENEFIT:When using the weapon you selected, your critical damage multiplier increases by one. For example, a longsword usually scores double damage on a critical. If a character using a longsword has Greater Critical (longsword), the damage triples.
+
+#Regalia Of The Hero Set		TYPE:ClassFeature.Supernatural.ItemSet	VISIBLE:NO	SA:Grant ally in 30' +5 on attack, save, or skill check.  Immediate action.  1/day|PREVARGT:RegaliaOfTheHeroCount,1	SA:Grant ally in 30' extra move action (immediate).  Standard action.  1/day|PREVARGT:RegaliaOfTheHeroCount,2	DEFINE:RegaliaOfTheHeroCount|0

@@ -1,0 +1,52 @@
+
+# Equipment Name							Output Name						Type						Contains							Cost		Weight	Slot Needed	Modifier							MODS		Virtual Feat		Vision											Spell Res.	Damage Reduction	Spells																																																					Save checks bonus								Combat bonus											Add to base move						Multiply base more		Bonus to nb of slots	Bonus to skill																				Stat bonus																			Unarmed Damage Level bonus	Modify VAR														Weapon prof. bonus																																																																											Automatic Languages	Special Property																																																																																													SOURCELONG
+Cloak of Greater Invisibility
+	TYPE:Magic.Wondrous.Cape
+	COST:100000
+	WT:1
+	SPROP:On command, gain the effects of a Greater Invisibility spell for 7 rounds
+	SORTKEY:Cloak of Greater Invisibility 999
+
+Cloak of Greater Invisibility (1/day)
+	TYPE:Magic.Wondrous.Cape
+	COST:20000
+	WT:1
+	SPROP:Once per day on command, gain the effects of a Greater Invisibility spell for 7 rounds
+	SORTKEY:Cloak of Greater Invisibility 001
+
+Cloak of Greater Invisibility (2/day)
+	TYPE:Magic.Wondrous.Cape
+	COST:40000
+	WT:1
+	SPROP:Twice per day on command, gain the effects of a Greater Invisibility spell for 7 rounds
+	SORTKEY:Cloak of Greater Invisibility 002
+
+Cloak of Greater Invisibility (3/day)
+	TYPE:Magic.Wondrous.Cape
+	COST:60000
+	WT:1
+	SPROP:Thrice per day on command, gain the effects of a Greater Invisibility spell for 7 rounds
+	SORTKEY:Cloak of Greater Invisibility 003
+
+Cloak of Greater Invisibility (4/day)
+	TYPE:Magic.Wondrous.Cape
+	COST:80000
+	WT:1
+	SPROP:Four times per day on command, gain the effects of a Greater Invisibility spell for 7 rounds
+	SORTKEY:Cloak of Greater Invisibility 004
+
+
+Pearl of Power (0 Level/Cantrip)
+	OUTPUTNAME:Pearl of Power, Cantrip
+	TYPE:Magic.Wondrous
+	COST:500
+	WT:0
+	SPROP:This seemingly normal pearl of average size and luster is a potent aid to all spellcasters who prepare spells (clerics, druids, rangers, paladins, and wizards). Once per day on command, a pearl of power enables the possessor to recall any one zero-level spells that she had prepared and then cast. The spell is then prepared again, just as if it had not been cast. Strong transmutation; CL 17th;
+
+Headband of the Stout Heart
+	TYPE:Magic.Wondrous.Headgear
+	COST:500
+	WT:0
+	BONUS:SAVE|Will|1|TYPE=Resistance
+	SPROP:Adds a +1 resistance bonus to Will saves
+

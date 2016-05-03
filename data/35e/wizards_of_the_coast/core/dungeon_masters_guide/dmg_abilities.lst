@@ -6,6 +6,8 @@ CATEGORY=Internal|Default.MOD	AUTO:WEAPONPROF|TYPE=Firearms|PREABILITY:1,CATEGOR
 
 First Level	CATEGORY:Internal	TEMPLATE:First Level	
 
+CATEGORY=Internal|Default.MOD	BONUS:ABILITYPOOL|Feat|TL-1
+
 ###Block: NPC Classes
 
 # Adept
